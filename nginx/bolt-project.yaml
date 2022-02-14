@@ -1,3 +1,5 @@
 ---
 name: nginx
-modules: []
+modules:
+  - name: puppetlabs/chocolatey
+    version_requirement: '6.0.1'

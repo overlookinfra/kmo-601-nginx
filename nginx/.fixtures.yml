@@ -3,4 +3,7 @@
 ---
 fixtures:
   forge_modules:
-#     stdlib: "puppetlabs/stdlib"
+    stdlib: "puppetlabs/stdlib"
+    chocolatey: "puppetlabs/chocolatey"
+    powershell: "puppetlabs/powershell"
+    registry: "puppetlabs/registry"
