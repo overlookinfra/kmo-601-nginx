@@ -1,0 +1,3 @@
+# data/osfamily/windows.yaml
+---
+nginx::package_provider: 'chocolatey'

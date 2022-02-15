@@ -1,1 +1,4 @@
---- {}
+# data/common.yaml
+---
+nginx::package_provider: ~   # undef
+nginx::version: latest
