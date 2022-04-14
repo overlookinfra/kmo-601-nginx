@@ -1,2 +1,2 @@
-# kmo-4-6-meta-repo
-A repository for training materials related to PE401 thru PE601
+# kmo-501-nginx-repo
+A repository containing a mock nginx component modules used as training materials related to PE401 thru PE601
