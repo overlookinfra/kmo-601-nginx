@@ -1,0 +1,5 @@
+# data/common.yaml
+---
+nginx::package_provider: ~
+nginx::version: latest
+nginx::nginx_conf_template: 'nginx/nginx.conf_linux.epp'

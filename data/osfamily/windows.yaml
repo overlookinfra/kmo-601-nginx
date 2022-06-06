@@ -1,0 +1,4 @@
+# data/osfamily/windows.yaml
+---
+nginx::package_provider: 'chocolatey'
+nginx::nginx_conf_template: 'nginx/nginx.conf_windows.epp'
