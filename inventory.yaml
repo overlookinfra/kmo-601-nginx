@@ -1,0 +1,5 @@
+config:
+  ssh:
+    user: root
+    host-key-check: false
+    private-key: C:\ProgramData\ssh\id_rsa
