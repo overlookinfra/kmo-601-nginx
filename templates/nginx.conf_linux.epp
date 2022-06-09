@@ -20,6 +20,7 @@ http {
     sendfile        on;
     keepalive_timeout  65;
     include <%= $sites_enabled_dir %>/*.conf;
+    log_not_found on;
     server {
         listen       80 default_server;
         listen       [::]:80 default_server;
