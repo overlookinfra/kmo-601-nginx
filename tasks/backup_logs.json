@@ -1,0 +1,16 @@
+{
+  "description": "Backs up nginx logs",
+  "supports_noop": false,
+  "parameters": {
+    "source_dir": {
+      "description": "Source directory to backup.",
+      "type": "String",
+      "default": "/var/log/nginx"
+    },
+    "target_dir": {
+      "description": "Target directory to save backup to.",
+      "type": "String",
+      "default": "/var/backup"
+    }
+  }
+}
