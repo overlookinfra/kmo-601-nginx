@@ -1,5 +1,19 @@
-config:
-  ssh:
-    user: root
-    host-key-check: false
-    private-key: C:\ProgramData\ssh\id_rsa
+groups:
+  - name: linux
+    targets:
+      - nixagent1
+      - nixagent2
+    config:
+      ssh:
+        user: root
+        host-key-check: false
+        private-key: C:\ProgramData\ssh\id_rsa
+  - name: windows
+    targets:
+      - winagent1
+    config:
+      transport: winrm
+      winrm:
+        user: Administrator
+        password: Puppetlabs!
+        ssl: false
