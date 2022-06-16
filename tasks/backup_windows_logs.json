@@ -1,0 +1,5 @@
+{
+  "name": "Windows backup",
+  "description": "A task to perform web site log backups on Windows targets",
+  "private": true
+}
