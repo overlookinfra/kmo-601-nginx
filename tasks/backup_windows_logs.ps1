@@ -13,8 +13,8 @@ $target_dir
 $date_stamp = Get-Date -UFormat "+%Y%m%d-%H%M%S"
 
 # Create subdir with timestamp in target backup dir
-$full_target_backup_path = Join-Path -Path $target_dir -ChildPath "site_backup_$date_stamp"
+$full_target_backup_path = Join-Path -Path "c:\backups\" -ChildPath "site_backup_$date_stamp"
 
 # Copy contents of source dir to full backup path target
 Write-Output "Copying items from $source_dir to full backup path $full_target_backup_path"
-Copy-Item -Recurse -Path $source_dir -Destination $full_target_backup_path
+Copy-Item -Recurse -Path "c:tools\nginx-1.21.6\logs\" -Destination $full_target_backup_path
