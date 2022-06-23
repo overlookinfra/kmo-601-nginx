@@ -8,6 +8,8 @@ $source_dir,
 [String]
 $target_dir
 )
+#Stop nginx service
+Stop-Service nginx
 
 # Create date stamp for backup sub directory
 $date_stamp = Get-Date -UFormat "+%Y%m%d-%H%M%S"
@@ -18,3 +20,6 @@ $full_target_backup_path = Join-Path -Path "c:\backups\" -ChildPath "site_backup
 # Copy contents of source dir to full backup path target
 Write-Output "Copying items from $source_dir to full backup path $full_target_backup_path"
 Copy-Item -Recurse -Path "c:\tools\nginx-1.23.0\logs\" -Destination $full_target_backup_path
+
+#Start nginx service
+Start-Service nginx

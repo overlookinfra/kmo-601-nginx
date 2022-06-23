@@ -4,22 +4,25 @@
     "parameters": {
         "source_dir": {
             "description": "Source directory to backup.",
-            "type": "String",
-            "default": "/var/log/nginx"
+            "type": "String"
         },
         "target_dir": {
             "description": "Target directory to save backup to.",
-            "type": "String",
-            "default": "/var/backup"
+            "type": "String"
         }
     },
-    "implementations": [{
+    "implementations": [
+        {
             "name": "backup_linux_logs.sh",
-            "requirements": ["shell"]
+            "requirements": [
+                "shell"
+            ]
         },
         {
             "name": "backup_windows_logs.ps1",
-            "requirements": ["powershell"]
+            "requirements": [
+                "powershell"
+            ]
         }
     ]
 }
