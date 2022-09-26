@@ -12,7 +12,7 @@ plan nginx::backup_all_logs (
   get_targets($targets).each |Target $targ| {
     case $targ.facts['os']['name'] {
       'windows': {
-          $source_dir ='C:\tools\nginx-1.23.0\logs'
+          $source_dir ='C:\tools\nginx-*\logs'
           $target_dir = 'C:\backups'
         }
       default: {
